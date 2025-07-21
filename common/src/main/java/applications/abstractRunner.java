@@ -237,8 +237,9 @@ public abstract class abstractRunner {
             metric_path = System.getProperty("user.home")
                     .concat("\\Documents\\briskstream\\metric_output");
         } else {
-            CFG_PATH = System.getProperty("user.home")
-                    .concat("/briskstream/common/src/main/resources/config/%s.properties");
+            // CFG_PATH = System.getProperty("user.home")
+            CFG_PATH = System.getenv("BRISKSTREAM_HOME")
+                    .concat("/common/src/main/resources/config/%s.properties");
             metric_path = System.getProperty("user.home")
                     .concat("/briskstream/metric_output");
         }

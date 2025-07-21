@@ -29,6 +29,7 @@
 #include <stdlib.h>
 #else
 #include <malloc.h>
+#endif
 
 using namespace std;
 

@@ -223,7 +223,11 @@ TSWLatexianTemp*
 .DS_Store
 
 .idea/*
-.class
+*.class
+*.o
+*.so*
+overseer.jar
+
 REF/*
 common/target/*
 BriskBenchamrks/target/*
@@ -251,3 +255,4 @@ BriskBenchmarks/target/
 Database/target/
 CEP/target/
 affinity/target/
+Tests/

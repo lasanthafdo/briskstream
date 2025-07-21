@@ -70,7 +70,7 @@ public class MemFileSpout extends AbstractSpout {
             path = config.getString(getConfigKey(OS_prefix.concat(BaseConstants.BaseConf.SPOUT_PATH)));
         }
 
-        String s = System.getProperty("user.home").concat("/data/app/").concat(path);
+        String s = System.getenv("BRISKSTREAM_DATA_PATH").concat("/data/app/").concat(path);
 
 
         array = new ArrayList<>();
